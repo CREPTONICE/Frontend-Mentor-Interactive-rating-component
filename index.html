@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div id="box" class="Boxstyles" aria-hidden="false">
+        <div id="star">
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 17 16"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+              fill="#FC7614"
+            />
+          </svg>
+        </div>
+
+        <h1 id="title">How did we do?</h1>
+
+        <p id="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div id="inputs">
+          <input
+            type="radio"
+            name="rating"
+            class="input"
+            id="input_1"
+            value="1"
+          />
+          <label for="input_1">1</label>
+          <input
+            type="radio"
+            name="rating"
+            class="input"
+            id="input_2"
+            value="2"
+          />
+          <label for="input_2">2</label>
+          <input
+            type="radio"
+            name="rating"
+            class="input"
+            id="input_3"
+            value="3"
+          />
+          <label for="input_3">3</label>
+          <input
+            type="radio"
+            name="rating"
+            class="input"
+            id="input_4"
+            value="4"
+          />
+          <label for="input_4">4</label>
+          <input
+            type="radio"
+            name="rating"
+            class="input"
+            id="input_5"
+            value="5"
+          />
+          <label for="input_5">5</label>
+        </div>
+
+        <button id="submit" disabled>Submit</button>
+      </div>
+
+      <div id="thankyou" class="Boxstyles" aria-hidden="true">
+        <div id="mobile">
+          <img
+            src="./img/illustration-thank-you.svg"
+            alt="Thank You!"
+            draggable="false"
+          />
+        </div>
+
+        <p id="selected-rate"></p>
+
+        <h2 id="mobile__title">Thank you!</h2>
+
+        <p id="mobile__description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
