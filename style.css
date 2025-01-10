@@ -72,7 +72,7 @@ main {
 #mobile__description {
   color: var(--Light--Grey);
   font-size: 0.8rem;
-  max-width: 31ch;
+  max-width: 34ch;
   margin-bottom: 1rem;
 }
 
@@ -114,6 +114,7 @@ label {
   transition: all 0.3s ease-in-out;
   font-weight: 500;
   font-size: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.196) 0px 5px 15px;
 
   &:not(:last-child) {
     margin-right: 0.5rem;
@@ -166,9 +167,10 @@ label {
 
 .Boxstyles {
   background-color: var(--Dark--Blue);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 1rem;
   transition: scale 0.3s ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 10px;
 }
 
 @media (min-width: 768px) {
